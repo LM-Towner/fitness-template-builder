@@ -1,7 +1,20 @@
+import { useState } from 'react';
 import { BlockPalette } from './components/BlockPalette';
 import { PlannerGrid } from './components/PlannerGrid';
+import { DaySelector } from './components/DaySelector';
+import { DAYS_OF_WEEK } from './utils/constants';
 
 function App() {
+  const [selectedDays, setSelectedDays] = useState<string[]>([...DAYS_OF_WEEK]);
+
+  const handleDayToggle = (day: string) => {
+    setSelectedDays(prev => 
+      prev.includes(day)
+        ? prev.filter(d => d !== day)
+        : [...prev, day]
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b border-gray-200">
@@ -32,8 +45,14 @@ function App() {
           <p className="text-sm text-gray-500 mt-1">Drag and drop workout blocks to create your weekly schedule</p>
         </div>
         <div className="flex flex-col lg:flex-row gap-6">
-          <BlockPalette />
-          <PlannerGrid />
+          <div className="flex flex-col gap-6">
+            <BlockPalette />
+            <DaySelector 
+              selectedDays={selectedDays}
+              onDayToggle={handleDayToggle}
+            />
+          </div>
+          <PlannerGrid selectedDays={selectedDays} />
         </div>
       </main>
     </div>

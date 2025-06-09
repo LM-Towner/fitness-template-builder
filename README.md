@@ -1,72 +1,102 @@
 # Fitness Template Builder
 
-A drag-and-drop weekly workout planner built with React, TypeScript, and modern web technologies. Create, customize, and save your workout templates with an intuitive interface.
+A modern web application for personal trainers to manage clients, create workout plans, and track progress. Built with React, TypeScript, and Tailwind CSS.
 
-## 🚀 Features
+[Live Demo](https://fitness-template-builder.vercel.app/)
 
-- Drag-and-drop interface for workout planning
-- Weekly calendar view
-- Customizable workout blocks
-- Local storage persistence
-- Modern, responsive design
-- TypeScript for type safety
+## Purpose
 
-## 🛠️ Tech Stack
+This application helps personal trainers:
+- Manage client profiles and track their progress
+- Create and schedule personalized workout plans
+- Monitor exercise progress with interactive charts
+- Track workout history and completion rates
+- Generate recurring workout schedules
+- Analyze client performance and attendance
 
-- [React](https://reactjs.org/) - UI Library
-- [TypeScript](https://www.typescriptlang.org/) - Type Safety
-- [Vite](https://vitejs.dev/) - Build Tool
-- [TailwindCSS](https://tailwindcss.com/) - Styling
-- [dnd-kit](https://dndkit.com/) - Drag and Drop
-- [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - Data Persistence
+## Tech Stack
 
-## 📦 Installation
+- **Frontend Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS for responsive design
+- **State Management**: Zustand for global state
+- **Charts**: Chart.js for progress visualization
+- **Icons**: Lucide React for modern icons
+- **Date Handling**: date-fns for date manipulation
+- **Deployment**: Vercel for hosting
+
+## Getting Started
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/fitness-template-builder.git
-cd fitness-template-builder
-```
+   ```bash
+   git clone https://github.com/yourusername/fitness-template-builder.git
+   ```
 
 2. Install dependencies:
-```bash
-npm install
-```
+   ```bash
+   cd fitness-template-builder
+   npm install
+   ```
 
 3. Start the development server:
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## 🏗️ Project Structure
+## Features
+
+### Client Management
+- Create and manage client profiles
+- Track client goals and progress
+- View client statistics and workout history
+
+### Workout Planning
+- Create personalized workout plans
+- Schedule recurring workouts
+- Add exercises with sets, reps, and weights
+- Include notes and instructions
+
+### Progress Tracking
+- Interactive charts for exercise progress
+- Weight and rep tracking over time
+- Workout completion rate monitoring
+- Client attendance tracking
+
+### User Interface
+- Modern, responsive design
+- Dark mode support
+- Interactive charts and graphs
+- Intuitive navigation
+
+## Project Structure
 
 ```
-fitness-template-builder/
-├── src/
-│   ├── components/     # React components
-│   ├── types/         # TypeScript type definitions
-│   ├── hooks/         # Custom React hooks
-│   ├── utils/         # Utility functions
-│   ├── App.tsx        # Main App component
-│   └── main.tsx       # Entry point
-├── public/            # Static assets
-└── ...config files
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── store/         # Zustand store definitions
+├── types/         # TypeScript type definitions
+└── utils/         # Utility functions
 ```
 
-## 🎯 Usage
+## Contributing
 
-1. Create a new workout template
-2. Drag and drop workout blocks onto the calendar
-3. Customize workout details
-4. Save your template
-5. Access your saved templates anytime
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Recent Updates
+
+- Added workout history with progress charts
+- Implemented exercise progress tracking
+- Enhanced UI with dark mode support
+- Added recurring workout scheduling
+- Improved client dashboard with statistics
+- Added sample data for demonstration

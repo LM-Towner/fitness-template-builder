@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="#4F46E5"/>
+  
+  <!-- Dumbbell -->
+  <g transform="translate(128, 160)">
+    <!-- Left Weight -->
+    <rect x="0" y="96" width="32" height="96" rx="16" fill="white"/>
+    <!-- Bar -->
+    <rect x="32" y="128" width="128" height="32" rx="16" fill="white"/>
+    <!-- Right Weight -->
+    <rect x="160" y="96" width="32" height="96" rx="16" fill="white"/>
+  </g>
+  
+  <!-- Heart Rate Line -->
+  <path d="M96 320 L128 288 L160 352 L192 256 L224 384 L256 224 L288 416 L320 192 L352 448 L384 160" 
+        stroke="white" 
+        stroke-width="16" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"/>
+</svg> 

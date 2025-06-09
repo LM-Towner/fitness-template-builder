@@ -4,6 +4,32 @@ A modern web application for personal trainers to manage clients, create workout
 
 [Live Demo](https://fitness-template-builder.vercel.app/)
 
+## Screenshots
+
+### Dashboard
+![Dashboard View](./screenshots/dashboard.png)
+*Main dashboard showing client statistics and quick actions*
+
+### Client Management
+![Client List](./screenshots/clients.png)
+*Client list with contact information and goals*
+
+### Workout Planning
+![Workout Planner](./screenshots/workout-planner.png)
+*Create and manage personalized workout plans*
+
+### Progress Tracking
+![Progress Charts](./screenshots/progress.png)
+*Track client progress with interactive charts*
+
+### Templates
+![Templates](./screenshots/templates.png)
+*Browse and manage workout templates*
+
+### Schedule
+![Schedule](./screenshots/schedule.png)
+*View and manage recurring workout schedules*
+
 ## Purpose
 
 This application helps personal trainers:

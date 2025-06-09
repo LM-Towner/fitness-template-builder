@@ -9,6 +9,7 @@ import { TemplateManagerPage } from './pages/TemplateManagerPage';
 import { MainLayout } from './components/MainLayout';
 import { ClientList } from './pages/ClientList';
 import { ScheduleManager } from './pages/ScheduleManager';
+import { AddClient } from './pages/AddClient';
 
 export function App() {
   return (
@@ -40,6 +41,14 @@ export function App() {
                   element={
                     <MainLayout>
                       <ClientList />
+                    </MainLayout>
+                  }
+                />
+                <Route
+                  path="/clients/new"
+                  element={
+                    <MainLayout>
+                      <AddClient />
                     </MainLayout>
                   }
                 />

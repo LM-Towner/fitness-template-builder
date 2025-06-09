@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useClientStore } from '../store/clientStore';
+import { Plus } from 'lucide-react';
 
 export function ClientList() {
   const { clients } = useClientStore();
@@ -7,11 +8,20 @@ export function ClientList() {
 
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Clients</h1>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-          Manage your clients and their workout programs.
-        </p>
+      <div className="mb-8 flex justify-between items-center">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Clients</h1>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            Manage your clients and their workout programs.
+          </p>
+        </div>
+        <button
+          onClick={() => navigate('/clients/new')}
+          className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          <Plus className="h-5 w-5 mr-2" />
+          Add Client
+        </button>
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -57,6 +67,7 @@ export function ClientList() {
               className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               onClick={() => navigate('/clients/new')}
             >
+              <Plus className="h-5 w-5 mr-2" />
               Add Client
             </button>
           </div>
